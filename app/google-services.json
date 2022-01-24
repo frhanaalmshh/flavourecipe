@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "603033388100",
+    "project_id": "flavourecipe-186b6",
+    "storage_bucket": "flavourecipe-186b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603033388100:android:589aa3288c2c09e80fe811",
+        "android_client_info": {
+          "package_name": "com.example.flavourecipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603033388100-5hso8tnq2qm4ln3ikfevvqnp12mcgf9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flavourecipe",
+            "certificate_hash": "c345db06c8d2143c43812cd5be07247d0af16a64"
+          }
+        },
+        {
+          "client_id": "603033388100-80udmmtlmv6m9ohsaq78qdj52ddp1q99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_4w3EzA17Oa8y1A9AdVEbCYARTndTw_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603033388100-80udmmtlmv6m9ohsaq78qdj52ddp1q99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

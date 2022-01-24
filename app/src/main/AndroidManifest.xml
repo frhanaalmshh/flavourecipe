@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flavourecipe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlavouRecipe">
+
+        <activity
+            android:name=".RecipeDetails"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".EditRecipe"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".CreateRecipe"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".RecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChickensPage"
+            android:exported="false" />
+        <activity
+            android:name=".FastFoodPage"
+            android:exported="false" />
+        <activity
+            android:name=".DessertsPage"
+            android:exported="false" />
+        <activity
+            android:name=".PastaPage"
+            android:exported="false" />
+        <activity
+            android:name=".NoodlesPage"
+            android:exported="false" />
+        <activity
+            android:name=".RicePage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".FoodHomepage" />
+        <activity android:name=".PageNavigation"/>
+        <activity android:name=".MyRecipeActivity"/>
+    </application>
+
+</manifest>
