@@ -101,7 +101,7 @@ public class MyRecipeActivity extends AppCompatActivity {
                         Intent intent = new Intent(view.getContext(),EditRecipe.class);
                         intent.putExtra("title",firebasemodel.getTitle());
                         intent.putExtra("content",firebasemodel.getContent());
-                        intent.putExtra("noteId",docId);
+                        intent.putExtra("recipeId",docId);
 
                         view.getContext().startActivity(intent);
 
