@@ -18,7 +18,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthException;
 
 public class SignUpActivity extends AppCompatActivity {
     private EditText emailEt,passwordEt1,passwordEt2;
@@ -88,16 +87,12 @@ public class SignUpActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(SignUpActivity.this,"Successfully registered",Toast.LENGTH_LONG).show();
-                    Intent intent=new Intent(SignUpActivity.this,FoodHomepage.class);
+                    Intent intent=new Intent(SignUpActivity.this,MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
                 else{
-                    //FirebaseAuthException e = (FirebaseAuthException)task.getException();
-                    //Toast.makeText(SignUpActivity.this,"Sign up fail!" + e.getMessage(),Toast.LENGTH_LONG).show();
-                    String s = "Sign up Failed" + task.getException();
-                    Toast.makeText(SignUpActivity.this, s,
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this,"Sign up fail!",Toast.LENGTH_LONG).show();
                 }
                 progressDialog.dismiss();
             }
