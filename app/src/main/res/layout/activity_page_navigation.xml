@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Background2"
+    android:background="@drawable/background2"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".PageNavigation">
@@ -38,7 +38,7 @@
                 android:layout_width="121dp"
                 android:layout_height="108dp"
                 android:layout_gravity="center"
-                android:src="@drawable/Plus">
+                android:src="@drawable/plusss">
 
             </ImageView>
 
