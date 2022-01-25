@@ -5,11 +5,13 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class PageNavigation extends AppCompatActivity implements View.OnClickListener{
 
-    private CardView MyRecipes, RecipeRec;
+    private CardView MyRecipes, RecipeRec, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +20,10 @@ public class PageNavigation extends AppCompatActivity implements View.OnClickLis
 
         MyRecipes = (CardView) findViewById(R.id.cardview_myrecipes);
         RecipeRec = (CardView) findViewById(R.id.cardview_recipesrec);
-
+        logout = (CardView) findViewById(R.id.logout);
         MyRecipes.setOnClickListener((View.OnClickListener) this);
         RecipeRec.setOnClickListener((View.OnClickListener) this);
+        logout.setOnClickListener((View.OnClickListener) this);
     }
 
     @Override
@@ -37,8 +40,16 @@ public class PageNavigation extends AppCompatActivity implements View.OnClickLis
                 startActivity(i);
                 break;
 
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(PageNavigation.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+
         }
 
     }
 
 }
+
+
