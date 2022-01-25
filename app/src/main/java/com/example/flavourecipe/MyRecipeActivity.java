@@ -63,7 +63,7 @@ public class MyRecipeActivity extends AppCompatActivity {
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
         firebaseFirestore=FirebaseFirestore.getInstance();
 
-        getSupportActionBar().setTitle("All Recipes");
+        getSupportActionBar().setTitle("My Recipes");
 
         mcreaterecipefab.setOnClickListener(new View.OnClickListener() {
             @Override
