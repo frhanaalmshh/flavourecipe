@@ -38,7 +38,7 @@
                 android:layout_width="121dp"
                 android:layout_height="108dp"
                 android:layout_gravity="center"
-                android:src="@drawable/Plus">
+                android:src="@drawable/plus">
 
             </ImageView>
 
