@@ -16,7 +16,7 @@
         android:fontFamily="@font/theblacklight"
         android:text="FlavourEcipe"
         android:textColor="#303"
-        android:textSize="50dp">
+        android:textSize="60dp">
 
     </TextView>
 
