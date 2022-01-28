@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbarofcreaterecipe"
-        android:background="@color/white">
+        android:background="@color/lilac">
 
         <EditText
             android:layout_width="match_parent"
@@ -29,7 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="15sp"
-        android:background="@color/white"
+        android:background="@drawable/background3"
+        android:foreground="@drawable/foreground_design2"
         android:gravity="top|left"
         android:textColor="@color/black"
         android:hint="Enter your recipe here"
