@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/bg_im"
     tools:context=".PageNavigation">
 
     <TextView
@@ -15,30 +15,34 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/theblacklight"
         android:text="FlavourEcipe"
-        android:textColor="@color/black"
-        android:textSize="80dp">
+        android:textColor="#FFFDFD"
+        android:layout_gravity="center"
+        android:textSize="75dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="10.9"
+        android:shadowDy="11.9"
+        android:shadowRadius="10.3">
 
     </TextView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview_myrecipes"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_width="290dp"
+        android:layout_height="110dp"
         app:cardElevation="50dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="@color/lilac"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        app:cardBackgroundColor="@color/white"
+        android:layout_gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="121dp"
-                android:layout_height="108dp"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:src="@drawable/plusss">
+                android:src="@drawable/bg2">
 
             </ImageView>
 
@@ -46,11 +50,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginRight="13dp"
+                android:fontFamily="@font/nunito_light"
                 android:text="My Recipes"
-                android:textColor="@color/white"
-                android:textSize="45dp" />
+                android:textColor="@color/black"
+                android:textSize="29dp" />
+
 
         </LinearLayout>
 
@@ -58,24 +63,23 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview_recipesrec"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_width="290dp"
+        android:layout_height="110dp"
         app:cardElevation="50dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="@color/lilac"
+        app:cardBackgroundColor="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="121dp"
-                android:layout_height="108dp"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:src="@drawable/m2">
+                android:src="@drawable/pic2">
 
             </ImageView>
 
@@ -84,11 +88,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginRight="19dp"
+                android:fontFamily="@font/nunito_light"
                 android:text="Recipes For You"
-                android:textColor="@color/white"
-                android:textSize="40dp" />
+                android:textColor="@color/black"
+                android:textSize="23dp" />
 
         </LinearLayout>
 
@@ -96,14 +100,13 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/logout"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_width="290dp"
+        android:layout_height="110dp"
         app:cardElevation="50dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="@color/lilac"
+        app:cardBackgroundColor="@color/white"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_gravity="center"
         tools:ignore="DuplicateIds">
 
 
@@ -112,10 +115,10 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="121dp"
-                android:layout_height="108dp"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:src="@drawable/m4">
+                android:src="@drawable/bg3">
 
             </ImageView>
 
@@ -123,16 +126,14 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/nunito_light"
                 android:text="Logout"
-                android:textColor="@color/white"
-                android:textSize="50dp" />
+                android:textColor="@color/black"
+                android:textSize="29dp"  />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-
 
 </LinearLayout>
