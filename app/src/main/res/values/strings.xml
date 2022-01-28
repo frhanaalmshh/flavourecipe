@@ -10,4 +10,5 @@
     <string name="desserts">Desserts</string>
     <string name="fast_food">Fast Food</string>
     <string name="chickens">Chickens</string>
+    <string name="recipe_label">Recipes For You</string>
 </resources>
