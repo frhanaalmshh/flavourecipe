@@ -30,17 +30,16 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/FlavourEcipe/app/src/main/res/layout/recipes_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/FlavourEcipe/app/src/main/res/layout/signup.xml" value="0.1" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/FlavourEcipe/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_edit_recipe.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_page_navigation.xml" value="0.18" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_pasta_page.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_recipe.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_recipe_details.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_welcome_page.xml" value="0.11730072463768115" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/cardview_recipe.xml" value="0.33" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/foodhomepage.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/recipes_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable-v24/foreground_design.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/btn_bg_design.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/cornerbackgrounf.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/cornerforpics.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/foreground.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/foreground_design.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/foreground_design2.xml" value="0.2703125" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/drawable/rectangular_field.xml" value="0.2703125" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_chickens_page.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_create_recipe.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_desserts_page.xml" value="0.1793478260869565" />
@@ -49,12 +48,14 @@
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_my_recipe.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_noodles_page.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_page_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_page_navigation.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_pasta_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_recipe.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_recipe_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_rice_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/activity_welcome_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/cardview_recipe.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/cornerbackground.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/foodhomepage.xml" value="0.264" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/recipes_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/lilysaturnie/AndroidStudioProjects/flavourecipe/app/src/main/res/layout/signup.xml" value="0.25416666666666665" />

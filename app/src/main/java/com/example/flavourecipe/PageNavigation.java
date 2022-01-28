@@ -45,6 +45,7 @@ public class PageNavigation extends AppCompatActivity implements View.OnClickLis
                 Intent intent = new Intent(PageNavigation.this,MainActivity.class);
                 startActivity(intent);
                 finish();
+                break;
 
         }
 

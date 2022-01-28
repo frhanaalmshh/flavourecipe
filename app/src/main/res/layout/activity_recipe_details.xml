@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/toolbarofrecipedetail"
-        android:background="@color/white">
+        android:background="@color/lilac">
 
         <TextView
             android:layout_width="match_parent"
@@ -25,16 +25,18 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
+        android:id="@+id/contentofrecipedetail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="17sp"
-        android:background="@color/white"
-        android:gravity="top|left"
-        android:textColor="@color/black"
-        android:hint="Enter your recipe here"
         android:layout_below="@id/toolbarofrecipedetail"
+        android:gravity="top|left"
+        android:hint="Enter your recipe here"
         android:padding="15dp"
-        android:id="@+id/contentofrecipedetail">
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:background="@drawable/background3"
+        android:foreground="@drawable/foreground_design2">
 
     </TextView>
 
