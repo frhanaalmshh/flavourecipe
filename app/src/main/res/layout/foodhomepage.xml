@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background2"
+        android:background="@drawable/background4"
         android:orientation="vertical"
         android:weightSum="10"
         app:layout_constraintBaseline_toBaselineOf="parent">
@@ -22,15 +22,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="50dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/theblacklight"
-                android:gravity="center"
                 android:text="@string/main_menu"
-                android:textColor="@color/black"
-                android:textSize="75sp">
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="65dp"
+                android:layout_centerHorizontal="true">
 
             </TextView>
 
@@ -48,29 +46,29 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/RicePage"
-                app:cardBackgroundColor="#90D5CE"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
-                    android:layout_width="142dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="117dp"
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/rice">
+                        android:src="@drawable/rice2"
+                        android:scaleType="centerCrop">
 
                     </ImageView>
 
@@ -92,29 +90,29 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/NoodlesPage"
-                app:cardBackgroundColor="#92C5DC"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
-                    android:layout_width="142dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="117dp"
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/noodles">
+                        android:src="@drawable/noodles2"
+                        android:scaleType="centerCrop">
 
                     </ImageView>
 
@@ -136,29 +134,29 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/PastaPage"
-                app:cardBackgroundColor="#EAAFC3"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
-                    android:layout_width="142dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="117dp"
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pasta">
+                        android:src="@drawable/pasta"
+                        android:scaleType="centerCrop">
 
                     </ImageView>
 
@@ -180,29 +178,29 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/DessertsPage"
-                app:cardBackgroundColor="#F3ECAD"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
-                    android:layout_width="142dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="117dp"
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/sweets">
+                        android:src="@drawable/desserts"
+                        android:scaleType="centerCrop">
 
                     </ImageView>
 
@@ -224,29 +222,29 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/FastFoodPage"
-                app:cardBackgroundColor="#E3CAB6"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
-                    android:layout_width="142dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="117dp"
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/fast_food">
+                        android:src="@drawable/fast_food"
+                        android:scaleType="centerCrop">
 
                     </ImageView>
 
@@ -268,29 +266,29 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/ChickensPage"
-                app:cardBackgroundColor="#F8B6A1"
+                app:cardBackgroundColor="@color/white"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
-                    android:layout_width="142dp"
-                    android:layout_height="147dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="129dp"
-                        android:layout_height="117dp"
+                        android:layout_width="185dp"
+                        android:layout_height="110dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/chicken">
+                        android:src="@drawable/chicken"
+                        android:scaleType="centerCrop">
 
                     </ImageView>
 
