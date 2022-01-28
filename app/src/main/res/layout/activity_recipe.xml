@@ -24,37 +24,36 @@
                 android:id="@+id/text_recipe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:text="recipeName"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
-
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                />
             <TextView
                 android:id="@+id/ingredients"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_margin="18dp"
+                android:layout_margin="40dp"
                 android:textSize="20sp"
                 android:text="ingredients"
+                android:fontFamily="@font/ubuntu_light"
+                android:textStyle="bold"
                 android:textColor="@color/black"
-
                 />
             <TextView
                 android:id="@+id/method"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_margin="30dp"
-                android:text="recipeName"
-                android:fontFamily="@font/poppins_regular"
-                android:textSize="22sp"
+                android:text="methods"
+                android:textSize="21sp"
                 android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/black"
                 />
             <TextView
@@ -62,12 +61,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_margin="18dp"
+                android:layout_margin="30dp"
                 android:textSize="20sp"
-                android:text="ingredients"
+                android:text="steps"
+                android:fontFamily="@font/ubuntu_light"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-
                 />
 
         </LinearLayout>
@@ -77,3 +76,4 @@
     </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
+
