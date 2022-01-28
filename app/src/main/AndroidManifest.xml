@@ -32,25 +32,31 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".RecipeActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".ChickensPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recipe_label"/>
         <activity
             android:name=".FastFoodPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recipe_label"/>
         <activity
             android:name=".DessertsPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recipe_label"/>
         <activity
             android:name=".PastaPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recipe_label"/>
         <activity
             android:name=".NoodlesPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recipe_label"/>
         <activity
             android:name=".RicePage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/recipe_label"/>
         <activity
             android:name=".MainActivity"
             android:exported="false">
