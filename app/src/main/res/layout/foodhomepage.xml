@@ -28,6 +28,10 @@
                 android:text="@string/main_menu"
                 android:textAlignment="center"
                 android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="10.9"
+                android:shadowDy="11.9"
+                android:shadowRadius="1.6"
                 android:textSize="65dp">
 
             </TextView>
