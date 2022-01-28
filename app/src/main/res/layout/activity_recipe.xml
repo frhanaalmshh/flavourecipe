@@ -1,79 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecipeActivity"
-    android:background="@drawable/background2"
-    android:foreground="@drawable/foreground_design2">
+    android:background="@drawable/background4"
+    android:orientation="vertical">
 
-    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:padding="10dp"
         >
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/recipe_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/text_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="recipeName"
+            android:textAlignment="center"
+            android:fontFamily="@font/theblacklight"
+            android:textSize="45dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="440dp"
+        android:layout_height="548dp"
+        android:background="@drawable/cvbg"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
 
-            <TextView
-                android:id="@+id/text_recipe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="recipeName"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:fontFamily="@font/poppins_regular"
-                android:textColor="@color/black"
-                />
-            <TextView
-                android:id="@+id/ingredients"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_margin="40dp"
-                android:textSize="20sp"
-                android:text="ingredients"
-                android:fontFamily="@font/ubuntu_light"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                />
-            <TextView
-                android:id="@+id/method"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="methods"
-                android:textSize="21sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:fontFamily="@font/poppins_regular"
-                android:textColor="@color/black"
-                />
-            <TextView
-                android:id="@+id/recipe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_margin="30dp"
-                android:textSize="20sp"
-                android:text="steps"
-                android:fontFamily="@font/ubuntu_light"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/ingredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="40dp"
+                    android:textSize="20sp"
+                    android:text="ingredients"
+                    android:fontFamily="@font/nunito_light"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="methods"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito_light"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="30dp"
+                    android:textSize="20sp"
+                    android:text="steps"
+                    android:fontFamily="@font/nunito_light"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
 
 
+            </LinearLayout>
 
-    </androidx.core.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
 
 </LinearLayout>
-
