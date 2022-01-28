@@ -3,4 +3,11 @@
     <string name="where_you_can_store_your_secret_formulas_from_plankton">Where You Can Store Your Secret Formulas From Plankton</string>
     <string name="sign_up">Sign Up</string>
     <string name="log_in">Log In</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="rice">Rice</string>
+    <string name="noodles">Noodles</string>
+    <string name="pasta">Pasta</string>
+    <string name="desserts">Desserts</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="chickens">Chickens</string>
 </resources>
