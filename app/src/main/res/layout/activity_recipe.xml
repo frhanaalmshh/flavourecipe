@@ -20,39 +20,43 @@
                 android:id="@+id/text_recipe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:text="recipeName"
-                android:textSize="21sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
                 />
             <TextView
                 android:id="@+id/ingredients"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_margin="18dp"
+                android:layout_margin="40dp"
                 android:textSize="20sp"
                 android:text="ingredients"
-
+                android:fontFamily="@font/ubuntu_light"
                 />
             <TextView
                 android:id="@+id/method"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="recipeName"
+                android:text="methods"
                 android:textSize="21sp"
                 android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
                 />
             <TextView
                 android:id="@+id/recipe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_margin="18dp"
+                android:layout_margin="30dp"
                 android:textSize="20sp"
-                android:text="ingredients"
-
+                android:text="steps"
+                android:fontFamily="@font/ubuntu_light"
                 />
 
         </LinearLayout>
