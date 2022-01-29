@@ -21,6 +21,7 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:hint="Enter your recipe title here"
+            android:fontFamily="@font/nunito_bold"
             android:id="@+id/createtitlerecipe"/>
 
     </androidx.appcompat.widget.Toolbar>
@@ -29,28 +30,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="15sp"
-        android:background="@drawable/background3"
-        android:foreground="@drawable/foreground_design2"
         android:gravity="top|left"
         android:textColor="@color/black"
         android:hint="Enter your recipe here"
         android:layout_below="@id/toolbarofcreaterecipe"
         android:padding="15dp"
+        android:fontFamily="@font/nunito_light"
         android:id="@+id/createcontentrecipe">
 
     </EditText>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saverecipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|end"
-        android:id="@+id/saverecipe"
-        android:src="@drawable/ic_baseline_done_24"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
         android:background="#FFFFFF"
+        android:src="@drawable/ic_baseline_done_24"
+        android:backgroundTint="@color/lilac"
         app:maxImageSize="40dp">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
