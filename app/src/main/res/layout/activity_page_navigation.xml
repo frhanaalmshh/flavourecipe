@@ -50,14 +50,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:layout_marginRight="13dp"
                 android:fontFamily="@font/nunito_light"
                 android:text="My Recipes"
                 android:textColor="@color/black"
                 android:textSize="29dp" />
 
-
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="        Keep your secret                                formulas safe and sound"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
 
     </androidx.cardview.widget.CardView>
 
@@ -88,6 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
                 android:layout_marginRight="19dp"
                 android:fontFamily="@font/nunito_light"
                 android:text="Recipes For You"
@@ -95,6 +108,17 @@
                 android:textSize="23dp" />
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="Start your cooking journey here!"
+            android:textColor="@color/black"
+            android:textSize="11dp" />
 
     </androidx.cardview.widget.CardView>
 
