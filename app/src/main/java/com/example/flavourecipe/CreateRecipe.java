@@ -23,8 +23,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
+//function to create recipe
 public class CreateRecipe extends AppCompatActivity {
 
+    //declaration of variables
     EditText mcreatetitlerecipe, mcreatecontentrecipe;
     FloatingActionButton msaverecipe;
     FirebaseAuth firebaseAuth;
@@ -38,6 +40,7 @@ public class CreateRecipe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_recipe);
 
+        //pass id from layout
         msaverecipe=findViewById(R.id.saverecipe);
         mcreatecontentrecipe=findViewById(R.id.createcontentrecipe);
         mcreatetitlerecipe=findViewById(R.id.createtitlerecipe);
@@ -51,20 +54,21 @@ public class CreateRecipe extends AppCompatActivity {
         firebaseFirestore=FirebaseFirestore.getInstance();
         firebaseUser=FirebaseAuth.getInstance().getCurrentUser();
 
+        //link a listener with the save button in create recipe layout
         msaverecipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String title = mcreatetitlerecipe.getText().toString();
                 String content = mcreatecontentrecipe.getText().toString();
-                if(title.isEmpty() || content.isEmpty())
+                if(title.isEmpty() || content.isEmpty())    //if either title or content is empty
                 {
                     Toast.makeText(getApplicationContext(),"Both field are required",Toast.LENGTH_SHORT).show();
                 }
-                else
+                else    //if user input both recipe title and content
                 {
-
                     mprogressbarcreaterecipe.setVisibility(view.VISIBLE);
 
+                    //store recipe in Firestore
                     DocumentReference documentReference=firebaseFirestore.collection("recipes").document(firebaseUser.getUid()).collection("myRecipes").document();
                     Map<String, Object> recipe = new HashMap<>();
                     recipe.put("title",title);
@@ -72,16 +76,15 @@ public class CreateRecipe extends AppCompatActivity {
 
                     documentReference.set(recipe).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
-                        public void onSuccess(Void unused) {
+                        public void onSuccess(Void unused) {    //if recipe is created successfully
                             Toast.makeText(getApplicationContext(),"Recipe created successfully",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(CreateRecipe.this,RecipeActivity.class));
                         }
-                    }).addOnFailureListener(new OnFailureListener() {
+                    }).addOnFailureListener(new OnFailureListener() {   //if fail to create recipe
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             Toast.makeText(getApplicationContext(),"Failed to create recipe",Toast.LENGTH_SHORT).show();
                             mprogressbarcreaterecipe.setVisibility(View.INVISIBLE);
-                            //startActivity(new Intent(CreateRecipe.this,RecipeActivity.class));
                         }
                     });
 
