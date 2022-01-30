@@ -10,6 +10,7 @@ import android.view.WindowManager;
 
 public class WelcomePage extends AppCompatActivity {
 
+//welcome page that links to SignUpActivity and MainActivity java class
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

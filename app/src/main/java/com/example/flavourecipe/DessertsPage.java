@@ -9,11 +9,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+//recipes for Desserts Category
 public class DessertsPage extends AppCompatActivity {
 
+    //recycler view for each of the recipes
     RecyclerView myrecyclerView;
     RecyclerViewAdapter myAdapter;
 
+    //recipe's ingredients and methods are stored in array
     List<Recipes> recipes1;
 
     @Override

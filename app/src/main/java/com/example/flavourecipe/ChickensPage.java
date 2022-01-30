@@ -7,12 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+//recipes for Chicken Category
 public class ChickensPage extends AppCompatActivity {
-
+//recycler view for each of the recipes
     RecyclerView myrecyclerView;
     RecyclerViewAdapter myAdapter;
 
+//recipe's ingredients and methods are stored in array
     List<Recipes> recipes1;
 
     @Override

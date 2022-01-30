@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 import java.util.List;
 
-
+//Function that keeps all the data in recycler view
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyHolder> {
 
     private Context mContext;
@@ -57,7 +57,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         });
     }
 
-    @Override
+    @Override //retrive all the recipes in the recyclerview
     public int getItemCount() {
         return mData.size();
     }

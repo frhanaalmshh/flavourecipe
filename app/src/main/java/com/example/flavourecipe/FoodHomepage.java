@@ -21,7 +21,7 @@ import com.google.android.gms.tasks.Task;
 
 public class FoodHomepage extends Activity implements View.OnClickListener {
     private CardView RicePage, NoodlesPage, PastaPage, DessertsPage, FastFoodPage, ChickensPage;
-
+//cardviews for each categories are created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +43,7 @@ public class FoodHomepage extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v){
         Intent i ;
-        switch (v.getId()){
+        switch (v.getId()){ //cardview to new activity according to their respective categories
             case R.id.RicePage: i = new Intent(this,RicePage.class); startActivity(i); break;
             case R.id.NoodlesPage: i = new Intent(this,NoodlesPage.class); startActivity(i); break;
             case R.id.PastaPage: i = new Intent(this,PastaPage.class); startActivity(i); break;

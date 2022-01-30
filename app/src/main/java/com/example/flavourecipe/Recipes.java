@@ -1,5 +1,6 @@
 package com.example.flavourecipe;
 
+//declaring variables and functions of recipe attributes
 public class Recipes {
 
     private String RecipeName;

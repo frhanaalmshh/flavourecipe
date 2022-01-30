@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+//Function to register users and save record in firebase
 public class SignUpActivity extends AppCompatActivity {
     private EditText emailEt,passwordEt1,passwordEt2;
     private Button SignUpButton;
@@ -66,7 +67,7 @@ public class SignUpActivity extends AppCompatActivity {
         else if(TextUtils.isEmpty(password2)){
             passwordEt2.setError("Confirm your password");
             return;
-        }
+        } //password validation
         else if(!password1.equals(password2)){
             passwordEt2.setError("Different password");
             return;
@@ -74,7 +75,7 @@ public class SignUpActivity extends AppCompatActivity {
         else if(password1.length()<4){
             passwordEt1.setError("Length should be > 4");
             return;
-        }
+        } //email validation
         else if(!isValidEmail(email)){
             emailEt.setError("invalid email");
             return;
@@ -85,13 +86,13 @@ public class SignUpActivity extends AppCompatActivity {
         firebaseAuth.createUserWithEmailAndPassword(email,password1).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
+                if(task.isSuccessful()){ //function if user is successfully registered
                     Toast.makeText(SignUpActivity.this,"Successfully registered",Toast.LENGTH_LONG).show();
                     Intent intent=new Intent(SignUpActivity.this,MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
-                else{
+                else{ //function if user is fail to be registered
                     Toast.makeText(SignUpActivity.this,"Sign up fail!",Toast.LENGTH_LONG).show();
                 }
                 progressDialog.dismiss();

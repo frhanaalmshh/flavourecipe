@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import com.google.firebase.auth.FirebaseAuth;
 
+//create three cardviews that link to My Recipes, Recipes For You and Logout
 public class PageNavigation extends AppCompatActivity implements View.OnClickListener{
 
     private CardView MyRecipes, RecipeRec, logout;

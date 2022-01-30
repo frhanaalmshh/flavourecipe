@@ -19,13 +19,14 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+//Function for login activity
 public class MainActivity extends AppCompatActivity {
     private EditText emailEt,passwordEt;
     private Button SignInButton;
     private TextView SignUpTv;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
-    @Override
+    @Override //retrieve user email and password from firebase
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Login();
             }
-        });
+        }); //direct first-time users to sign up page
         SignUpTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
+    } //login verification
     private void Login(){
         String email=emailEt.getText().toString();
         String password=passwordEt.getText().toString();
@@ -67,13 +68,13 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
+                if(task.isSuccessful()){ //function if user input match firebase records
                     Toast.makeText(MainActivity.this,"Login Successfully",Toast.LENGTH_LONG).show();
                     Intent intent=new Intent(MainActivity.this,PageNavigation.class);
                     startActivity(intent);
                     finish();
                 }
-                else{
+                else{ //function if user input do not match firebase records
                     Toast.makeText(MainActivity.this,"Sign In fail!",Toast.LENGTH_LONG).show();
                 }
                 progressDialog.dismiss();
