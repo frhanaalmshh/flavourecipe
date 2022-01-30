@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 
 public class RecipeActivity extends AppCompatActivity {
-    
+
     private TextView mRecipeName;
     private TextView mRecipeIngredients;
     private TextView mRecipeMethodTitle;
@@ -18,7 +18,8 @@ public class RecipeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
-        
+
+        //pass all id from recipe layout
         mRecipeName = (TextView) findViewById(R.id.text_recipe);
         mRecipeIngredients = (TextView) findViewById(R.id.ingredients);
         mRecipeMethodTitle = (TextView) findViewById(R.id.method);
