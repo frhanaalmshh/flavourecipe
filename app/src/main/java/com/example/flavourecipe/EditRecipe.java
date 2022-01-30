@@ -23,8 +23,10 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
+//function to edit recipe
 public class EditRecipe extends AppCompatActivity {
 
+    //declaration of variables
     Intent data;
     EditText medittitleofrecipe,meditcontentrecipe;
     FloatingActionButton msaveeditrecipe;
@@ -37,6 +39,8 @@ public class EditRecipe extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_recipe);
+
+        //pass id from layout
         medittitleofrecipe=findViewById(R.id.edittitlerecipe);
         meditcontentrecipe=findViewById(R.id.editcontentrecipe);
         msaveeditrecipe=findViewById(R.id.saveeditrecipe);
@@ -51,7 +55,7 @@ public class EditRecipe extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
+        //link a listener with the edit button in edit recipe layout
         msaveeditrecipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

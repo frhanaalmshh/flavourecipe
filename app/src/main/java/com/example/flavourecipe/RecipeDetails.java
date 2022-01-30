@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+//function for recipe details
 public class RecipeDetails extends AppCompatActivity {
 
     private TextView mtitleofrecipedetail,mcontentrecipedetail;
@@ -21,6 +22,8 @@ public class RecipeDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_details);
+
+        //pass id from layout
         mtitleofrecipedetail=findViewById(R.id.titleofrecipedetail);
         mcontentrecipedetail=findViewById(R.id.contentofrecipedetail);
         mgotoeditrecipe=findViewById(R.id.gotoeditrecipe);
@@ -30,6 +33,7 @@ public class RecipeDetails extends AppCompatActivity {
 
         Intent data=getIntent();
 
+        //link a listener with the button in recipe details layout
         mgotoeditrecipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

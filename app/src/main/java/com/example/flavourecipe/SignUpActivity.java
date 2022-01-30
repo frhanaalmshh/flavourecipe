@@ -69,15 +69,15 @@ public class SignUpActivity extends AppCompatActivity {
             return;
         } //password validation
         else if(!password1.equals(password2)){
-            passwordEt2.setError("Different password");
+            passwordEt2.setError("Different password entered");
             return;
         }
-        else if(password1.length()<4){
-            passwordEt1.setError("Length should be > 4");
+        else if(password1.length()<8){
+            passwordEt1.setError("Minimum password length should be 8 characters");
             return;
         } //email validation
         else if(!isValidEmail(email)){
-            emailEt.setError("invalid email");
+            emailEt.setError("Invalid email");
             return;
         }
         progressDialog.setMessage("Please wait...");

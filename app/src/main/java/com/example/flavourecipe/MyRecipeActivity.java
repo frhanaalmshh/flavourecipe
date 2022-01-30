@@ -35,15 +35,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+//function for MyRecipe Activity (create and store recipes)
 public class MyRecipeActivity extends AppCompatActivity {
 
+    //declaration of variables
     FloatingActionButton mcreaterecipefab;
     private FirebaseAuth firebaseAuth;
 
-
     RecyclerView mrecyclerview;
     StaggeredGridLayoutManager staggeredGridLayoutManager;
-
 
     FirebaseUser firebaseUser;
     FirebaseFirestore firebaseFirestore;
@@ -51,20 +51,22 @@ public class MyRecipeActivity extends AppCompatActivity {
     FirestoreRecyclerAdapter<firebasemodel,RecipeViewHolder> recipeAdapter;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_recipe);
 
+        //pass id of createrecipefab from its layout
         mcreaterecipefab=findViewById(R.id.createrecipefab);
         firebaseAuth=FirebaseAuth.getInstance();
 
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
         firebaseFirestore=FirebaseFirestore.getInstance();
 
+        //set title to My Recipes
         getSupportActionBar().setTitle("My Recipes");
 
+        //link a listener with the add button in MyRecipe layout
         mcreaterecipefab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,7 +76,7 @@ public class MyRecipeActivity extends AppCompatActivity {
             }
         });
 
-
+        //to extract data from firestore
         Query query=firebaseFirestore.collection("recipes").document(firebaseUser.getUid()).collection("myRecipes").orderBy("title",Query.Direction.ASCENDING);
 
         FirestoreRecyclerOptions<firebasemodel> alluserrecipes = new FirestoreRecyclerOptions.Builder<firebasemodel>().setQuery(query,firebasemodel.class).build();
